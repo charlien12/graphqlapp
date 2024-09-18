@@ -1,0 +1,19 @@
+type Query{
+getUser:[Users]
+}
+type Mutation{
+    AddUser(input:UsersInput):Users
+    UpdateUser(updateUser:UsersInput):Users
+}
+input UsersInput{
+    id:ID
+    name:String
+    designation:String
+    salary:String
+}
+type Users{
+    id:ID
+    name:String
+    designation:String
+    salary:String
+}
